@@ -1,0 +1,213 @@
+.s-contact {
+    background-image: linear-gradient(to top, #00000070, #00000070), url(/img/contact/bg-01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+    padding: 80px 0;
+    position: relative;
+    .s_icon {
+        font-size: 40px;
+    }
+
+    .s_title {
+        font-family: $ff-secondary;
+        font-size: 45px;
+        line-height: 1.4em;
+        width: 70%;
+        margin: 30px auto;
+    }
+    .s_list {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+
+        .c-square {
+            animation: rotate360 20s linear infinite;
+        }
+    }
+
+    .s_image {
+        margin: 30px 0;
+        img {
+            width: 7%;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+    }
+
+    .s_contact-box {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.s-contactus {
+    background-color: #171819;
+    position: relative;
+    height: 650px;
+
+    .s_contact-box {
+        background-color: $color-black;
+        top: -150px;
+        position: relative;
+
+        width: 80%;
+        margin: 0 auto;
+        .s_inner {
+            padding: 40px;
+            .s_title {
+                h2 {
+                    font-family: $ff-secondary;
+                    font-size: 45px;
+                    margin-bottom: 40px;
+                }
+                .s_request-info {
+                    font-size: $fs-16;
+                    margin-bottom: 40px;
+
+                    span {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+
+        .s_field-select {
+            position: relative;
+            i {
+                position: absolute;
+                top: 30%;
+                left: 10px;
+                color: $color-black;
+                font-size: 18px;
+            }
+
+            .icon2 {
+                top: 25%;
+            }
+        }
+
+        .s_field-inner {
+            input {
+                padding: 14px;
+                margin-bottom: 20px;
+                border: 1px solid $primary-color;
+                z-index: 3;
+                width: 100%;
+                // background-color: transparent;
+                &::placeholder {
+                    color: $color-black;
+                    font-size: $fs-14;
+                }
+            }
+
+            .s_l-icon {
+                width: 100%;
+                padding: 14px;
+                padding-left: 30px;
+            }
+
+            .message {
+                width: 100%;
+                height: 150px;
+                padding: 20px;
+                outline: none;
+            }
+        }
+
+        .s_info-col {
+            background-image: url(/img/contact/bg-02.png);
+            background-size: cover;
+            padding: 50px 20px;
+            .c-square {
+                margin: 40px auto;
+            }
+
+            .s_info {
+                li {
+                    margin-bottom: 40px;
+                }
+
+                .s_headline {
+                    font-size: $fs-20;
+                    font-weight: $fw-700;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    color: #a7a7a7;
+                    font-size: $fs-14;
+                }
+            }
+        }
+    }
+
+    .img-2 {
+        position: absolute;
+        width: 14%;
+        bottom: 35px;
+        right: 32px;
+    }
+}
+
+@media (max-width: 979px) {
+    .s-contact {
+        height: 555px;
+        padding: 50px 0;
+        .s_title {
+            font-size: 30px;
+            margin: 20px auto;
+        }
+        .s_icon {
+            font-size: 30px;
+        }
+    }
+
+    .s-contactus {
+        height: 580px;
+        .s_contact-box {
+            .s_info-col {
+                display: none;
+            }
+        }
+
+        .img-2 {
+            bottom: -100px;
+            z-index: 3;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .s-contact {
+        height: 350px;
+        padding: 0;
+        .s_title {
+            font-size: 18px;
+            margin: 10px auto;
+            width: 90%;
+        }
+    }
+
+    .s-contactus {
+        .s_contact-box {
+            top: -90px;
+            width: 100%;
+            .s_inner {
+                padding: 20px;
+
+                .s_title {
+                    h2 {
+                        font-size: 30px;
+                        margin-bottom: 20px;
+                    }
+
+                    .s_request-info {
+                        font-size: $fs-14;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

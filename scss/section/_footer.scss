@@ -1,0 +1,213 @@
+.s-footer {
+    background-image: linear-gradient(to bottom, #0000006d, #0000006d), url(/img/footer/bg01.jpg);
+    padding: 60px 20px 40px;
+    background-size: cover;
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
+
+    .bg-01 {
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        width: 25%;
+        animation: movetoBottom 2s linear infinite alternate;
+    }
+
+    .s_list-footer {
+        width: 50%;
+        margin: 0 auto;
+        .s_start {
+            padding: 20px;
+            li {
+                font-size: $fs-12;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .s_info {
+        padding: 60px;
+        background-image: url(/img/footer/img1.png);
+        background-size: cover;
+        background-color: black;
+        position: relative;
+
+        .s_line1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2%;
+            height: 100%;
+        }
+        .s_line2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 2%;
+            height: 100%;
+        }
+
+        .s_logo {
+            width: 55%;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+
+        .s_address {
+            color: #a7a7a7;
+            font-style: $fs-16;
+            font-family: $ff-secondary;
+            margin: 12px 0;
+        }
+
+        .s_list {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin-bottom: 30px;
+
+            .c-square {
+                animation: rotate360 20s linear infinite;
+            }
+        }
+
+        .s_heading {
+            font-size: $fs-36;
+            font-family: $ff-secondary;
+        }
+
+        .s_sub {
+            color: #a7a7a7;
+            font-style: $fs-16;
+            font-family: $ff-secondary;
+
+            span {
+                color: $color-white;
+                font-weight: $fw-900;
+                margin-left: 4px;
+            }
+        }
+
+        .s_email {
+            position: relative;
+            margin: 20px 0;
+            input {
+                width: 100%;
+                height: 49px;
+                background-color: #0e0d0c;
+                border: none;
+                padding-left: 45px;
+                border: 1px solid #3e3e3e;
+                color: $primary-color;
+            }
+
+            .s_icon {
+                position: absolute;
+                top: 28%;
+                left: 4%;
+                color: $color-white;
+            }
+
+            .s-headline {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+
+    .s_coppyright {
+        text-align: center;
+        margin-top: 80px;
+        font-family: $ff-secondary;
+        font-size: $fs-18;
+    }
+}
+
+@media (max-width: 979px) {
+    .s-footer {
+        padding-bottom: 0;
+        .s_list-footer {
+            .s_start {
+                padding: 0;
+            }
+        }
+
+        .s_info {
+            padding: 0;
+            .s_heading {
+                font-size: 24px;
+            }
+
+            .s_logo {
+                margin-top: 20px;
+            }
+
+            .s_line1 {
+                width: 6%;
+            }
+
+            .s_line2 {
+                width: 6%;
+            }
+
+            .s_email {
+                input {
+                    width: 80%;
+                    height: 42px;
+                }
+                .s_icon {
+                    left: 14%;
+                }
+
+                .s-headline {
+                    right: 25px;
+                }
+            }
+        }
+
+        .s_coppyright {
+            margin-top: 60px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .s-footer {
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        .s_list-footer {
+            display: none;
+        }
+
+        .s_info {
+            .s_address {
+                font-size: 11px;
+            }
+            .s_heading {
+                font-size: 18px;
+            }
+            .s_sub {
+                font-size: 14px;
+            }
+            .s_email {
+                input {
+                    width: 90%;
+                    height: 38px;
+                }
+                .s-headline {
+                    right: 10px;
+                }
+            }
+        }
+
+        .s_coppyright {
+            color: #fff;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,173 @@
+.s-banner {
+    .s_content {
+        width: 62%;
+        top: 100px;
+    }
+    .s_headline-banner {
+        font-size: 4.2rem;
+        line-height: 1.2;
+        font-family: $ff-secondary;
+        letter-spacing: 1.5px;
+        margin-top: 30px;
+        margin-bottom: 45px;
+    }
+    .s_subtitle {
+        font-size: $fs-16;
+        margin-bottom: 40px;
+    }
+
+    .b-bookBtn {
+        width: 100px;
+        height: 100px;
+        background-color: #e4c590;
+        padding: 5px 10px;
+        position: relative;
+        left: 105%;
+        bottom: 25px;
+
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: 1px solid $primary-color;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotate(45deg);
+            animation: rotate360 20s linear infinite;
+        }
+
+        img {
+            width: 48%;
+            margin: 5px auto;
+            margin-bottom: 10px;
+        }
+        span {
+            font-size: $fs-12;
+            display: block;
+            margin-bottom: 10px;
+            color: $color-black;
+        }
+    }
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(720deg);
+    }
+}
+
+@media (max-width: 979px) {
+    .s-banner {
+        margin-top: 90px;
+        .s_headline-banner {
+            font-size: 3.5rem;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+        .s_subtitle {
+            font-size: $fs-12;
+            margin-bottom: 20px;
+        }
+
+        .b-bookBtn {
+            width: 80px;
+            height: 80px;
+
+            left: 105%;
+            bottom: 75px;
+            span {
+                font-size: $fs-8;
+                display: block;
+                margin-bottom: 10px;
+                color: #000;
+            }
+        }
+        .s_content {
+            width: 65%;
+            margin: 0 auto;
+            top: 50px;
+        }
+    }
+}
+
+@media (max-width: 797px) {
+    .s-banner {
+        .b-bookBtn {
+            bottom: 105px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .s-banner {
+        margin-top: 70px;
+
+        .b-bookBtn {
+            width: 60px;
+            height: 60px;
+            padding-bottom: 5px;
+            left: 100%;
+            bottom: 100px;
+            span {
+                font-size: 6px;
+                display: block;
+            }
+        }
+
+        .s_content {
+            width: 60%;
+            margin: 0 auto;
+            top: 0;
+        }
+
+        .s_headline-banner {
+            font-size: 24px;
+            margin-top: 3px;
+            margin-bottom: 30px;
+        }
+
+        .s_subtitle {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 391px) {
+    .s-banner {
+        margin-top: 70px;
+
+        .b-bookBtn {
+            width: 60px;
+            height: 60px;
+            padding-bottom: 5px;
+            left: 100%;
+            bottom: 70px;
+            span {
+                font-size: 6px;
+                display: block;
+            }
+        }
+
+        .s_content {
+            width: 60%;
+            margin: 0 auto;
+            top: -10px;
+        }
+
+        .s_headline-banner {
+            font-size: 20px;
+            margin-top: 3px;
+            margin-bottom: 20px;
+        }
+
+        .s_subtitle {
+            display: none;
+        }
+    }
+}

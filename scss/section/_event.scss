@@ -1,0 +1,116 @@
+.s-event {
+    overflow: hidden;
+    .b-event {
+        padding-right: 0;
+        padding-left: 0;
+
+        .b_center {
+            position: absolute;
+            bottom: -55px;
+            left: 20%;
+
+            .b_content {
+                width: 90%;
+            }
+        }
+
+        .b_content {
+            width: 60%;
+            margin: 0 auto;
+            padding: 48px 0;
+            text-align: center;
+            .b_subtitle {
+                color: $primary-color;
+                font-size: $fs-10;
+                font-weight: 700;
+                letter-spacing: 0.4em;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+            h3 {
+                color: $color-white;
+                font-size: $fs-18;
+                font-weight: $fw-700;
+                letter-spacing: 0.4em;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                font-family: $ff-secondary;
+            }
+
+            .b_text {
+                color: #a7a7a7;
+                font-size: $fs-12;
+            }
+
+            .c_content {
+                .c-menu {
+                    margin: 20px auto;
+                    width: 90%;
+                }
+
+                a {
+                    color: $primary-color;
+                    font-size: $fs-10;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 979px) {
+    .s-event {
+        .b-event {
+            .b_content {
+                width: 60%;
+                margin: 0px auto;
+                padding: 45px 0px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 797px) {
+    .s-event {
+        .b-event {
+            .b_content {
+                width: 60%;
+                margin: 0px auto;
+                padding: 37px 0px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .s-event {
+        .b-event {
+            .b_center {
+                .b_content {
+                    position: relative;
+                    top: -180px;
+
+                    margin: 0 auto;
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+            .b_content {
+                width: 80%;
+                padding: 20px 0px;
+                .c_content {
+                    .c-menu {
+                        margin: 10px auto;
+                    }
+                }
+                h3 {
+                    margin-bottom: 15px;
+                }
+                .b_subtitle {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.s-menu {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    padding: 50px 0;
+
+    .c-title-h2 {
+        margin-bottom: 60px;
+    }
+
+    .bg-01 {
+        position: absolute;
+        top: 2px;
+        left: -70px;
+        width: 1.8%;
+        height: 100%;
+    }
+    .bg-02 {
+        position: absolute;
+        top: 2px;
+        right: -70px;
+        width: 1.8%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .s-menu {
+        padding: 20px 0;
+
+        .c-title-h2 {
+            margin-bottom: 30px;
+        }
+    }
+}

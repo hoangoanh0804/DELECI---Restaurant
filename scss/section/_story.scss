@@ -1,0 +1,203 @@
+.s-story {
+    margin-top: 40px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background-color: #171819;
+    position: relative;
+
+    .s-left {
+        padding: 0 30px;
+        .c-title-text {
+            width: 80%;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .s-headline {
+            width: 50%;
+            margin: 50px auto;
+        }
+
+        .s_contact-title {
+            margin-left: 40px;
+            margin-bottom: 0;
+        }
+
+        .c-btn-style-one {
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+
+        .bg-story {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            width: 12%;
+        }
+    }
+    .s-right {
+        position: relative;
+        padding: 0 30px;
+
+        .bg-2 {
+            position: absolute;
+            top: -45px;
+            right: -5px;
+            width: 18%;
+        }
+        .bg-round {
+            position: absolute;
+            top: -50px;
+            right: -11px;
+            width: 20%;
+            z-index: 1;
+            animation: rotate360 20s linear infinite;
+        }
+        .c-card-story {
+            position: absolute;
+            bottom: -130px;
+            left: -80px;
+
+            .c_img {
+                z-index: 3;
+                position: relative;
+
+                overflow: hidden;
+                margin: 20px auto;
+                object-fit: cover;
+                transition: 0.2;
+            }
+            .img1 {
+                cursor: pointer;
+                width: 80%;
+                transition: 0.5s;
+                margin: 0 auto;
+            }
+
+            .img2 {
+                position: absolute;
+                width: 40%;
+                top: -7%;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 1;
+                cursor: pointer;
+                transition: 1s;
+            }
+        }
+    }
+}
+
+@media (max-width: 979px) {
+    .s-story {
+        margin-top: 0;
+        padding-top: 70px;
+        padding-bottom: 0;
+        .container {
+            .row {
+                flex-wrap: wrap-reverse;
+            }
+        }
+        .s-left {
+            padding-top: 40px;
+            padding-bottom: 20px;
+            .bg-story {
+                position: absolute;
+                top: 54%;
+                left: 80%;
+                width: 15%;
+            }
+
+            .s-headline {
+                text-align: center;
+            }
+
+            .s_contact-title {
+                text-align: center;
+            }
+
+            .s_contact-number {
+                display: inline-block;
+                font-size: 34px;
+            }
+        }
+
+        .s-right {
+            padding: 0 60px;
+            .bg-2 {
+                position: absolute;
+                top: -45px;
+                right: -5px;
+                width: 15%;
+            }
+
+            .bg-round {
+                position: absolute;
+                top: -45px;
+                right: -5px;
+                width: 15%;
+            }
+
+            .c-card-story {
+                position: absolute;
+                bottom: -130px;
+                left: -50px;
+                .img2 {
+                    position: absolute;
+                    width: 36%;
+                    top: -3%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .s-story {
+        margin-top: 20px;
+        padding-top: 50px;
+        padding-bottom: 0;
+
+        .s-left {
+            text-align: center;
+            padding-top: 25px;
+
+            .s-headline {
+                width: 65%;
+                margin: 0 auto;
+            }
+
+            .c-btn-style-one {
+                margin-left: 0;
+                margin-top: 0;
+            }
+
+            .s_contact-number {
+                font-size: 18px;
+            }
+            .s_contact-title {
+                margin-left: 0;
+                font-size: $fs-12;
+            }
+            .c-title-text {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .bg-story {
+                position: absolute;
+                top: 50%;
+                left: 77%;
+                width: 20%;
+            }
+        }
+
+        .s-right {
+            padding: 0;
+
+            .c-card-story {
+                display: none;
+            }
+        }
+    }
+}

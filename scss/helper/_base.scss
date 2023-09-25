@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Forum&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $color-black;
+    color: $color-white;
+    // overflow: hidden;
+    height: 300vh;
+    font-family: $ff-primary;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var($primary-color);
+}
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: $color-white;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: $primary-color;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+input,
+button {
+    font-family: inherit;
+    outline: none;
+}
+
+.display-1 {
+    font-size: $fs-16;
+    line-height: 1;
+}
+
+.headline-1 {
+    font-size: $fs-20;
+}
+
+.mrb50 {
+    margin-bottom: 50px;
+}
+
+.mrb30 {
+    margin-bottom: 30px;
+}
+
+.mrt30 {
+    margin-top: 30px;
+}
+.mrt50 {
+    margin-top: 50px;
+}
+
+.mrt80 {
+    margin-top: 80px;
+}
+
+@media (max-width: 979px) {
+    .mrt80 {
+        margin-top: 0;
+    }
+
+    .mrt50 {
+        margin-top: 0;
+    }
+    .mrt30 {
+        margin-top: 0;
+    }
+}
+
+.mrt120 {
+    margin-top: 120px;
+}
+
+.primary-color {
+    color: $primary-color;
+}
+
+.bg-black {
+    background-color: #121111;
+}

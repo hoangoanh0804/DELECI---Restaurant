@@ -1,0 +1,22 @@
+.c-hover-underline {
+    position: relative;
+    max-width: max-content;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 100%;
+        height: 5px;
+        border-block: 1px solid $primary-color;
+        transform: scaleX(0.2);
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    &:is(:hover, :focus-visible)::after {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
